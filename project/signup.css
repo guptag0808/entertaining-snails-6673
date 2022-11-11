@@ -1,0 +1,41 @@
+body{
+	background-image: url(all/103.jpg);
+	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#container{
+height: 500px;
+width: 500px;
+/* border: 3px solid red; */
+margin-top: 150px;
+margin-left: 500px;
+font-size: 20px;
+text-align: center;
+background-color: beige;
+padding: 10px 0px;
+}
+#Email{
+	padding: 10px 50px;
+	margin-left: 60px;
+}
+#mobile{
+	padding: 10px 50px;
+	/* margin-left */
+}
+#pass{
+	padding: 10px 50px;
+	margin-left: 50px;
+}
+button{
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: bold;
+     background-color: #fff;
+	 color: rgb(245, 120, 141);
+	 border: 1px solid rgb(233, 129, 146);
+}
+button:hover{
+	background-color: rgb(243, 79, 107);
+	color: #fff;
+}
