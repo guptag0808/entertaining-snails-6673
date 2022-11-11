@@ -22,6 +22,7 @@ list-style: none;
 margin: 15px;
 margin-right: 20px;
 padding-right: 20px;
+font-size: 25px;
 
 }#navbar>ul>a{
 padding-left: 50px;
@@ -66,7 +67,8 @@ margin-top: 50px;
 color: rgb(235, 60, 89);
 font-weight: bold;
 cursor: pointer;
-}.cult_pass{
+}
+.cult_pass{
 /* border: 2px solid red; */
 height:auto;
 width:70%;
@@ -211,6 +213,7 @@ position: absolute;
 	cursor: pointer;
 	
  }
+ 
  .more{
 	padding:6px 30px;
 	font-size: 15px;
@@ -364,18 +367,20 @@ border-radius: 20px;
  }
  footer{
 	display: flex;
-	border:5px solid red;
+	/* border:5px solid red; */
 	height:500px;
 	color: #fff;
 	text-align: center;
 	align-items: center;
+	background-color: black;
 	
 
- }footer>div{
+ }
+ footer>div{
 	width:20%;
 	margin-left: 30px;
  }
- .lg{
+ #lg{
 	display: flex;
 	
  }
@@ -390,16 +395,27 @@ border-radius: 20px;
 	
  }
 
- .first_li{
+ .first_li a{
 	text-decoration: none;
+	color: #fff;
+
 	
  }
- .lg>div:nth-child(2){
+ #lg>div:nth-child(2){
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	border: 4px solid yellow;
+	/* border: 4px solid yellow; */
 	
+ }  .faq{
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	color: rgb(233, 216, 216);
+	/* border: 3px solid blue; */
+	height: 400px;
+	align-items: center;
+	font-size: 15px;
  }
 
  
