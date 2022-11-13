@@ -204,19 +204,18 @@
 
 	  function sorting(){
 		let val=document.querySelector("select").value
-		// console.log(val)
+		console.log(val)
 	   if(val=="lth"){
 		     bag.sort((a,b)=>{
 				 return a.price -b.price
 			 })
-			//  console.log(bag)
-	   }
-	   if(val="htl"){
+		 }
+	   else if(val=="htl"){
 		bag.sort((a,b)=>{
 			 return b.price - a.price
 		})
 	   }
-	   
+
 	   display(bag)
 	 }
 	
@@ -230,16 +229,18 @@
 		let image= document.createElement("img");
 		image.setAttribute("src",el.image)
 		let price= document.createElement("h2");
-		price.innerText= "Price"+el.price;
+		price.innerText= "Price: "+el.price;
 
 		let offerPrice= document.createElement("h2");
-		offerPrice.innerText=  "OfferPrice"+ el.OfferPrice;
+		offerPrice.innerText=  "OfferPrice: "+ el.OfferPrice;
 		
 		let btn=document.createElement("button");
 		btn.innerText="Add To Cart";
 		btn.addEventListener("click",function(){
           cartItems.push(el);
 		  localStorage.setItem("cartProduct",JSON.stringify(cartItems));
+		  alert("Product added to cart")
+		  
 		})
 
 		div.append(image,price,offerPrice,btn);
