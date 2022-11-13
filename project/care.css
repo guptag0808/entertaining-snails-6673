@@ -1,0 +1,166 @@
+
+
+#navbar{
+	display: flex;
+	position: relative;
+	background-color: rgb(22, 22, 24);
+	}
+	#navbar>ul{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	list-style: none;	
+	margin: 15px;
+	margin-right: 20px;
+	padding-right: 20px;
+	font-size: 25px;
+	
+	}
+	#navbar>ul>a{
+	padding-left: 50px;
+	font-weight: bold;
+	color: rgb(229, 234, 243);
+	text-decoration: none;
+	}
+	#navbar>h2{
+	color: #fff;
+	/* border:2px solid green; */
+	width:20%;
+	margin:5px;
+	
+	}
+	#first{
+		
+		height: 200px;
+		
+		margin: auto;
+		margin-top:60px;
+		width: 80%;
+		animation: slider 9s linear infinite;
+		background-size:contain;
+
+	}
+	@keyframes slider{
+		0%{
+			background-image: url(all/off.jpg);
+			
+		}
+		30%{
+			background-image: url(all/vitamin.jpg);
+        }
+		99%{
+			background-image: url(all/checkup.jpg);
+		}
+
+	}
+	.cont{
+		
+		width: 90%;
+		margin: auto;
+		display:grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-template-rows: auto;
+		text-align: center;
+        gap:30px;
+		margin-top: 50px;
+	}
+	.cont>div>img{
+		border-radius: 10px;
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+		width:100%;
+		cursor: pointer;
+	} 
+	.cont>div>img:hover{
+		transform: scale(1.02);
+         transition: 1s;
+	}
+	#doc{
+		color: grey;
+		width: 70%;
+		font-size: 30px;
+	}
+	.des{
+		display: flex;
+		background-color: rgb(62, 62, 80);
+		color: grey;
+		justify-content:center;
+	}
+	.des>div{
+      width: 45%;
+	  
+	   
+	}
+	footer{
+		background-color: black;
+		display: flex;
+		margin-top: 100px;
+		color: #fff;
+		height: 400px;
+	}
+	
+		   footer>div{
+			width:20%;
+			margin-left: 30px;
+			margin-top: 100px;
+		 }
+		 #lg{
+			display: flex;
+			
+		 }
+		 .bottom{
+			margin-top:0px ;
+			/* border: 4px solid red; */
+			padding-top: 20px;
+	
+			
+			
+		 }.bottom img{
+			border-radius: 10px;
+          
+			box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(238, 228, 228, 0.08) 0px 1px 0px inset;
+			border: 2px;
+            
+	       cursor: pointer;
+			
+		 }
+		 #text{
+			color: rgb(121, 111, 111);
+			/* border: 2px solid red; */
+		 }
+		
+		 .col>a{
+			text-decoration: none;
+			color: rgb(121, 111, 111);
+	        }
+		
+		 #lg>div:nth-child(2){
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			border: 4px solid yellow;
+			
+
+	        }
+			
+		  .faq{
+			display: flex;
+			justify-content: space-between;
+			cursor: pointer;
+			color: rgb(211, 198, 198);
+			/* border: 3px solid blue; */
+			height: 400px;
+			align-items: center;
+			font-size: 12px;
+			background-color: rgb(56, 52, 52);
+		 }
+	
+		 button{
+			background-color: rgb(111, 111, 134);
+			color: #fff;
+			border:none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+		 }
+
+	

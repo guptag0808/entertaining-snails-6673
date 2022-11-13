@@ -16,6 +16,4 @@ form.addEventListener("submit", function (event) {
         alert("You are a cult now❤️");      
         
 }
-    
- 
-});
+    });
