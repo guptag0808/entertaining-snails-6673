@@ -18,10 +18,10 @@
 		<img width="5%" src="f.png" alt="">
 		<h2> Free N Fit</h2>
 		<ul>
-			<a href="fitness.html , _blank">
+			<a href="fitness.html " _blank>
 				<li>FITNESS</li>
 			</a>
-			<a href="">
+			<a href="care.html">
 				<li>CARE</li>
 			</a>
 			<a href="">
@@ -37,14 +37,20 @@
 				<li>Get App</li>
 			</a>
 
-			<a href="">
+			<a href="login.html">
 				<li><i class="fa-solid fa-user"></i></i></li>
 			</a>
 			<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+			<select onchange=" sorting()">
+				<option value="lth">LTH</option>
+				<option value="htl">HTL</option>
+			</select>
 		</ul>
 
 	</nav>
+	
 	<div id="first"></div>
+	
      
 	<div class="cont"></div>
 	<div id="doc">
@@ -187,6 +193,7 @@
 	let bag=[];
 	let cartItems= JSON.parse(localStorage.getItem("cartProduct"))||[];
 	let url= "https://636dca84b567eed48ac9262f.mockapi.io/product";
+	
 	  fetch(url)
 	  .then((res)=>res.json())
 	  .then((data)=>{
@@ -195,21 +202,38 @@
 	  })
 
 
+	  function sorting(){
+		let val=document.querySelector("select").value
+		// console.log(val)
+	   if(val=="lth"){
+		     bag.sort((a,b)=>{
+				 return a.price -b.price
+			 })
+			//  console.log(bag)
+	   }
+	   if(val="htl"){
+		bag.sort((a,b)=>{
+			 return b.price - a.price
+		})
+	   }
+	   
+	   display(bag)
+	 }
 	
-
 
    function display(data){
 	// console.log(data)
+	document.querySelector(".cont").innerHTML=""
 	data.forEach((el)=>{
 		 let div= document.createElement("div");
 		
 		let image= document.createElement("img");
 		image.setAttribute("src",el.image)
 		let price= document.createElement("h2");
-		price.innerText=el.price;
+		price.innerText= "Price"+el.price;
 
 		let offerPrice= document.createElement("h2");
-		offerPrice.innerText=el.OfferPrice;
+		offerPrice.innerText=  "OfferPrice"+ el.OfferPrice;
 		
 		let btn=document.createElement("button");
 		btn.innerText="Add To Cart";
