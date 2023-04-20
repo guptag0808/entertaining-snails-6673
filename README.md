@@ -1,7 +1,7 @@
 Skinstore.com
 Skinstore skinstore.in India's premium online platform to buy your best skin care, hair care, hair growth and makeup products.
 
-Cloned skinStore.com website during the construct week at Masai School. Completed the project in six days and implemented the maximum user centric functionality.
+Cloned skinStore.com website during the construct week at Masai School. Completed the project in five days and implemented the maximum user centric functionality.
 
 
 
